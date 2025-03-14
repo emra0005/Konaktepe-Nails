@@ -1,0 +1,512 @@
+h1 {
+  color: white;
+  text-align: center;
+}
+h2 {
+  color: white;
+  text-align: center;
+}
+
+body {
+  background-color: rgb(174, 174, 164);
+}
+
+section {
+  margin: 30px;
+}
+
+/* MIN MOOOOOOOOOOOOOOOOOOBILE VERSION */
+
+ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  justify-content: space-around;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ALLE RÆKKER MED  3 BILLEDER */
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+.grid_1-1-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid_1-1-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-text {
+  display: grid;
+}
+.bob {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2 {
+  place-self: center;
+}
+
+/* FORSIDE side 1
+ Lyserøde kasser - her har jeg fjeret dette så den passer til mobil og lægger sig ned og ikke er 1fr 1fr */
+/* .image-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr
+  justify-content: center;
+  align-items: center;
+} */
+
+/* tekst på forsiden */
+.forsiden {
+  display: grid;
+}
+.tekstforside {
+  background-color: rgba(205, 205, 205, 0.435);
+  padding: 10px;
+  padding-left: 5px;
+  border-radius: 20px;
+  margin-top: 15em;
+  place-self: left;
+  font-size: 2vw;
+  position: absolute;
+}
+h5 {
+  color: white;
+}
+/* lyserøde kasser */
+.image-box1 {
+  background-color: rgb(216, 112, 174);
+  text-align: right;
+  max-width: 100%;
+  height: 100%;
+  padding: 2rem;
+  justify-content: center;
+}
+.image-box1 img {
+  width: 500px;
+  height: 450px;
+  object-fit: cover;
+}
+.image-box2 {
+  background-color: rgb(247, 185, 222);
+  text-align: right;
+  max-width: 100%;
+  height: 100%;
+  padding: 2rem;
+  justify-content: center;
+}
+.image-box2 img {
+  width: 500px;
+  height: 450px;
+  object-fit: cover;
+}
+
+/* fotter */
+.footer {
+  background-color: rgb(247, 185, 222);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+.footerbox {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: pink;
+}
+.følgos img {
+  padding: 100px;
+}
+
+/* BEHANDLINGER side 2
+
+Lyserød og brun kasse med priser*/
+
+.image-box3 {
+  background-color: rgb(216, 112, 174);
+  padding: 20px;
+  text-align: left;
+}
+.image-box4 {
+  background-color: rgb(255, 192, 244);
+  padding: 20px;
+  text-align: left;
+}
+/* Bunden med tgb flaske og tekst  */
+.box {
+  background-color: rgb(247, 185, 222);
+}
+.grid_2-1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+.col-order {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+/* OM OS - side 3 */
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20 px;
+}
+
+.img2 {
+  grid-row: 4;
+}
+
+.col-order {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+.cinsta {
+  display: inline-block;
+  background-color: rgb(216, 112, 174);
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px grey;
+  margin-top: auto;
+}
+.ninsta {
+  display: inline-block;
+  background-color: rgb(216, 112, 174);
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px grey;
+  margin-top: auto;
+}
+.einsta {
+  display: inline-block;
+  background-color: rgb(216, 112, 174);
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px grey;
+  margin-top: auto;
+}
+
+/* KNAPPER - BOOK TID og FØLG OS = btn2 og FOOTER */
+
+.btn {
+  display: inline-block;
+  background-color: rgb(216, 112, 174);
+  color: white;
+  text-decoration: none;
+  box-shadow: 2px 2px 2px grey;
+  margin-top: auto;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.btn2 {
+  background-color: rgb(105, 159, 131);
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px grey;
+  margin-top: auto;
+}
+.følgos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+.kontakt {
+  text-align: center;
+}
+
+/* Jeg skubber her min BOOK TID i bund  */
+.flex_col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* MIN COOOOOOOOOOOOOOO0000000000000000000000000OOMPUTER VERSION */
+
+/**/
+@media (width > 600px) {
+  /* NAVIGATIONSMENU */
+
+  body {
+    padding-inline: 50px;
+  }
+
+  ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: space-around;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  /* nav a:hover{
+    color: black;   (kan tilføjes hvis jeg vil have menu til at skifte farve når man kører over) 
+} */
+
+  /* billeder */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  h2 {
+    margin-top: 100px;
+  }
+
+  /* RÆKKER MED  3 BILLEDER */
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-items: center;
+  }
+  .grid_1-1-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .img-text {
+    display: grid;
+  }
+  .bob {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  h2 {
+    place-self: center;
+  }
+
+  /* Forside billedet bliver redigeret - så den fylder det hele både i stor og lille  */
+
+  .forsiden img {
+    width: 100%;
+    height: 100%;
+  }
+  /* TEKST PÅ FORSIDE */
+  .forsiden {
+    display: grid;
+  }
+  .tekstforside {
+    background-color: rgba(205, 205, 205, 0.435);
+    padding: 10px;
+    padding-left: 5px;
+    border-radius: 20px;
+    margin-top: 15em;
+    place-self: left;
+    font-size: 2vw;
+    position: absolute;
+  }
+  h5 {
+    color: white;
+  }
+
+  /* FORSIDE side 1
+
+/* 
+ Lyserøde kasser */
+
+  .image-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+
+  .image-box1 {
+    background-color: rgb(216, 112, 174);
+    text-align: right;
+    max-width: 100%;
+    height: 100%;
+    padding: 2rem;
+    justify-content: center;
+  }
+  .image-box1 img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+  }
+  .image-box2 {
+    background-color: rgb(247, 185, 222);
+    text-align: right;
+    max-width: 100%;
+    height: 100%;
+    padding: 2rem;
+    justify-content: center;
+  }
+  .image-box2 img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+  }
+
+  /* BEHANDLINGER side 2
+
+Lyserød og brun kasse med priser*/
+
+  .image-box3 {
+    background-color: rgb(216, 112, 174);
+    text-align: left;
+    max-width: 100%;
+    height: 100%;
+    justify-content: center;
+  }
+  .image-box4 {
+    background-color: rgb(136, 107, 72);
+    text-align: left;
+    max-width: 100%;
+    height: 100%;
+    justify-content: center;
+  }
+
+  /* Bunden med tgb flaske og tekst  */
+  .box {
+    background-color: rgb(247, 185, 222);
+  }
+  .grid_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    padding: 10px;
+  }
+  .col-order {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  /* OM OS - side 3 */
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20 px;
+  }
+  .text2 {
+    display: grid;
+    grid-row: 2;
+  }
+
+  .img2 {
+    grid-row: 2;
+  }
+  /* OM OS - BUNDEN */
+  .grid_1-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    padding: 10px;
+  }
+  .col-order {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .cinsta {
+    display: inline-block;
+    background-color: rgb(216, 112, 174);
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px grey;
+    margin-top: auto;
+  }
+  .ninsta {
+    display: inline-block;
+    background-color: rgb(216, 112, 174);
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px grey;
+    margin-top: auto;
+  }
+  .einsta {
+    display: inline-block;
+    background-color: rgb(216, 112, 174);
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px grey;
+    margin-top: auto;
+  }
+
+  /* KNAP - BOOK TID */
+
+  .btn {
+    display: inline-block;
+    background-color: rgb(216, 112, 174);
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px grey;
+    margin-top: auto;
+  }
+
+  /* Jeg skubber her min knap på BEHANDLINGER i bund  */
+  .flex_col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  /* 
+  FOOTER BOKSEN FÅR FARVE OG GRID */
+  .footerbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: pink;
+  }
+  .følgos img {
+    padding: 50px;
+  }
+}
