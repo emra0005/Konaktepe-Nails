@@ -6,6 +6,10 @@ h2 {
   color: white;
   text-align: center;
 }
+h3 {
+  color: white;
+  text-align: center;
+}
 
 body {
   background-color: rgb(174, 174, 164);
@@ -53,10 +57,12 @@ img {
   height: 100%;
   object-fit: cover;
 }
-
 .img-text {
   display: grid;
+  text-decoration: none;
+  font-size: small;
 }
+
 .bob {
   grid-column: 1/2;
   grid-row: 1/2;
@@ -98,7 +104,7 @@ h5 {
 }
 /* lyserøde kasser */
 .image-box1 {
-  background-color: rgb(216, 112, 174);
+  background-color: #f299b9;
   text-align: right;
   max-width: 100%;
   height: 100%;
@@ -111,7 +117,7 @@ h5 {
   object-fit: cover;
 }
 .image-box2 {
-  background-color: rgb(247, 185, 222);
+  background-color: #ecc2cc;
   text-align: right;
   max-width: 100%;
   height: 100%;
@@ -137,7 +143,11 @@ h5 {
   background-color: pink;
 }
 .følgos img {
-  padding: 100px;
+  max-width: 50%;
+  padding: 30px;
+}
+.følgos {
+  padding-bottom: 20px;
 }
 
 /* BEHANDLINGER side 2
@@ -145,31 +155,34 @@ h5 {
 Lyserød og brun kasse med priser*/
 
 .image-box3 {
-  background-color: rgb(216, 112, 174);
+  background-color: #f299b9;
   padding: 20px;
   text-align: left;
 }
 .image-box4 {
-  background-color: rgb(255, 192, 244);
+  background-color: #ac8969;
   padding: 20px;
   text-align: left;
 }
 /* Bunden med tgb flaske og tekst  */
 .box {
-  background-color: rgb(247, 185, 222);
+  background-color: #f299b9;
 }
 .grid_2-1 {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr;
   gap: 10px;
   padding: 10px;
 }
-.col-order {
+.col-order img {
+  margin: 10%;
+}
+/* .col-order {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-}
+} */
 
 /* OM OS - side 3 */
 .grid_1-1 {
@@ -190,11 +203,11 @@ Lyserød og brun kasse med priser*/
   text-align: center;
 }
 .cinsta {
-  display: inline-block;
+  /* display: inline-block; */
   background-color: rgb(216, 112, 174);
   color: white;
-  text-decoration: none;
-  padding: 10px 20px;
+  /* text-decoration: none; */
+  padding: 5px 10px;
   border-radius: 5px;
   box-shadow: 2px 2px 2px grey;
   margin-top: auto;
@@ -204,7 +217,7 @@ Lyserød og brun kasse med priser*/
   background-color: rgb(216, 112, 174);
   color: white;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 5px 10px;
   border-radius: 5px;
   box-shadow: 2px 2px 2px grey;
   margin-top: auto;
@@ -214,7 +227,7 @@ Lyserød og brun kasse med priser*/
   background-color: rgb(216, 112, 174);
   color: white;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 5px 10px;
   border-radius: 5px;
   box-shadow: 2px 2px 2px grey;
   margin-top: auto;
@@ -233,19 +246,20 @@ Lyserød og brun kasse med priser*/
   border-radius: 5px;
 }
 .btn2 {
-  background-color: rgb(105, 159, 131);
+  background-color: rgb(216, 112, 174);
   color: white;
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 5px;
   box-shadow: 2px 2px 2px grey;
-  margin-top: auto;
+  margin-bottom: 20px;
 }
 .følgos {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
+  align-items: center;
 }
 .kontakt {
   text-align: center;
@@ -279,6 +293,17 @@ Lyserød og brun kasse med priser*/
     color: white;
     text-decoration: none;
   }
+  nav ul {
+    border: 1px solid white;
+  }
+  nav ul li {
+    display: inline-block;
+    padding: 10px 20px;
+  }
+  nav {
+    width: 100vw;
+  }
+
   /* nav a:hover{
     color: black;   (kan tilføjes hvis jeg vil have menu til at skifte farve når man kører over) 
 } */
@@ -309,6 +334,8 @@ Lyserød og brun kasse med priser*/
 
   .img-text {
     display: grid;
+    text-decoration: none;
+    font-size: small;
   }
   .bob {
     grid-column: 1/2;
@@ -345,6 +372,7 @@ Lyserød og brun kasse med priser*/
   }
   h5 {
     color: white;
+    font-size: large;
   }
 
   /* FORSIDE side 1
@@ -359,7 +387,7 @@ Lyserød og brun kasse med priser*/
   }
 
   .image-box1 {
-    background-color: rgb(216, 112, 174);
+    background-color: #f299b9;
     text-align: right;
     max-width: 100%;
     height: 100%;
@@ -372,7 +400,7 @@ Lyserød og brun kasse med priser*/
     object-fit: cover;
   }
   .image-box2 {
-    background-color: rgb(247, 185, 222);
+    background-color: #ecc2cc;
     text-align: right;
     max-width: 100%;
     height: 100%;
@@ -390,14 +418,14 @@ Lyserød og brun kasse med priser*/
 Lyserød og brun kasse med priser*/
 
   .image-box3 {
-    background-color: rgb(216, 112, 174);
+    background-color: #f299b9;
     text-align: left;
     max-width: 100%;
     height: 100%;
     justify-content: center;
   }
   .image-box4 {
-    background-color: rgb(136, 107, 72);
+    background-color: #ac8969;
     text-align: left;
     max-width: 100%;
     height: 100%;
@@ -406,7 +434,7 @@ Lyserød og brun kasse med priser*/
 
   /* Bunden med tgb flaske og tekst  */
   .box {
-    background-color: rgb(247, 185, 222);
+    background-color: #f299b9;
   }
   .grid_2-1 {
     display: grid;
@@ -419,6 +447,9 @@ Lyserød og brun kasse med priser*/
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
+  }
+
+  .2-1knap {
   }
 
   /* OM OS - side 3 */
@@ -484,7 +515,7 @@ Lyserød og brun kasse med priser*/
 
   .btn {
     display: inline-block;
-    background-color: rgb(216, 112, 174);
+    background-color: #f299b9;
     color: white;
     text-decoration: none;
     padding: 10px 20px;
@@ -504,9 +535,10 @@ Lyserød og brun kasse med priser*/
   .footerbox {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: pink;
+    background-color: #ac8969;
   }
   .følgos img {
     padding: 50px;
+    max-width: 50%;
   }
 }
