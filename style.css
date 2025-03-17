@@ -12,7 +12,7 @@ h3 {
 }
 
 body {
-  background-color: rgb(174, 174, 164);
+  background-color: rgb(152, 152, 139);
 }
 
 section {
@@ -237,7 +237,7 @@ Lyserød og brun kasse med priser*/
 
 .btn {
   display: inline-block;
-  background-color: rgb(216, 112, 174);
+  background-color: #f299b9;
   color: white;
   text-decoration: none;
   box-shadow: 2px 2px 2px grey;
@@ -246,7 +246,7 @@ Lyserød og brun kasse med priser*/
   border-radius: 5px;
 }
 .btn2 {
-  background-color: rgb(216, 112, 174);
+  background-color: #f299b9;
   color: white;
   text-decoration: none;
   padding: 10px 20px;
@@ -482,7 +482,7 @@ Lyserød og brun kasse med priser*/
   }
   .cinsta {
     display: inline-block;
-    background-color: rgb(216, 112, 174);
+    background-color: #ecc2cc;
     color: white;
     text-decoration: none;
     padding: 10px 20px;
@@ -492,7 +492,7 @@ Lyserød og brun kasse med priser*/
   }
   .ninsta {
     display: inline-block;
-    background-color: rgb(216, 112, 174);
+    background-color: #ecc2cc;
     color: white;
     text-decoration: none;
     padding: 10px 20px;
@@ -502,7 +502,7 @@ Lyserød og brun kasse med priser*/
   }
   .einsta {
     display: inline-block;
-    background-color: rgb(216, 112, 174);
+    background-color: #ecc2cc;
     color: white;
     text-decoration: none;
     padding: 10px 20px;
