@@ -6,9 +6,17 @@ h2 {
   color: white;
   text-align: center;
 }
+
 h3 {
   color: white;
   text-align: center;
+  border-bottom: 1px solid white;
+  font-size: x-large;
+}
+h6 {
+  color: white;
+  place-self: center;
+  font-size: large;
 }
 
 body {
@@ -101,6 +109,8 @@ h2 {
 }
 h5 {
   color: white;
+  text-align: center;
+  font-size: xx-large;
 }
 /* lyserøde kasser */
 .image-box1 {
@@ -254,6 +264,16 @@ Lyserød og brun kasse med priser*/
   box-shadow: 2px 2px 2px grey;
   margin-bottom: 20px;
 }
+.btn3 {
+  display: inline-block;
+  background-color: #ecc2cc;
+  color: white;
+  text-decoration: none;
+  box-shadow: 2px 2px 2px grey;
+  margin-top: auto;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
 .følgos {
   display: flex;
   flex-direction: column;
@@ -274,14 +294,12 @@ Lyserød og brun kasse med priser*/
 
 /* MIN COOOOOOOOOOOOOOO0000000000000000000000000OOMPUTER VERSION */
 
-/**/
 @media (width > 600px) {
-  /* NAVIGATIONSMENU */
-
   body {
-    padding-inline: 50px;
+    padding-inline: 40px;
   }
 
+  /* navigationsmenu */
   ul {
     display: flex;
     list-style-type: none;
@@ -301,11 +319,13 @@ Lyserød og brun kasse med priser*/
     padding: 10px 20px;
   }
   nav {
-    width: 100vw;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   /* nav a:hover{
-    color: black;   (kan tilføjes hvis jeg vil have menu til at skifte farve når man kører over) 
+  color: black;   (kan tilføjes hvis jeg vil have menu til at skifte farve når man kører over) 
 } */
 
   /* billeder */
@@ -317,6 +337,24 @@ Lyserød og brun kasse med priser*/
 
   h2 {
     margin-top: 100px;
+    text-align: center;
+    position: relative;
+    font-weight: bold;
+  }
+  h2::before,
+  h2::after {
+    content: "";
+    position: absolute;
+    top: 60%;
+    width: 30%;
+    height: 1px;
+    background-color: white;
+  }
+  h2::before {
+    left: 0;
+  }
+  h2::after {
+    right: 0;
   }
 
   /* RÆKKER MED  3 BILLEDER */
@@ -372,13 +410,13 @@ Lyserød og brun kasse med priser*/
   }
   h5 {
     color: white;
-    font-size: large;
+    font-size: x-large;
   }
 
   /* FORSIDE side 1
 
 /* 
- Lyserøde kasser */
+Lyserøde kasser */
 
   .image-container {
     display: grid;
@@ -447,9 +485,6 @@ Lyserød og brun kasse med priser*/
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-  }
-
-  .2-1knap {
   }
 
   /* OM OS - side 3 */
@@ -531,7 +566,7 @@ Lyserød og brun kasse med priser*/
     justify-content: space-between;
   }
   /* 
-  FOOTER BOKSEN FÅR FARVE OG GRID */
+FOOTER BOKSEN FÅR FARVE OG GRID */
   .footerbox {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -540,5 +575,10 @@ Lyserød og brun kasse med priser*/
   .følgos img {
     padding: 50px;
     max-width: 50%;
+  }
+  h6 {
+    color: white;
+    place-self: center;
+    font-size: x-large;
   }
 }
