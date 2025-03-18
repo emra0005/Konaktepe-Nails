@@ -184,9 +184,7 @@ Lyserød og brun kasse med priser*/
   gap: 10px;
   padding: 10px;
 }
-.col-order img {
-  margin: 10%;
-}
+
 /* .col-order {
   display: flex;
   flex-direction: column;
@@ -205,39 +203,46 @@ Lyserød og brun kasse med priser*/
 .img2 {
   grid-row: 4;
 }
-
+.col-order img {
+  max-width: 70%;
+  padding: 65px;
+}
 .col-order {
+  text-align: center;
+}
+.col-order1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
+  gap: 5px;
 }
 .cinsta {
-  /* display: inline-block; */
-  background-color: rgb(216, 112, 174);
+  display: inline-block;
+  background-color: #ecc2cc;
   color: white;
-  /* text-decoration: none; */
-  padding: 5px 10px;
+  text-decoration: none;
+  padding: 10px 20px;
   border-radius: 5px;
   box-shadow: 2px 2px 2px grey;
   margin-top: auto;
 }
 .ninsta {
   display: inline-block;
-  background-color: rgb(216, 112, 174);
+  background-color: #ecc2cc;
   color: white;
   text-decoration: none;
-  padding: 5px 10px;
+  padding: 10px 20px;
   border-radius: 5px;
   box-shadow: 2px 2px 2px grey;
   margin-top: auto;
 }
 .einsta {
   display: inline-block;
-  background-color: rgb(216, 112, 174);
+  background-color: #ecc2cc;
   color: white;
   text-decoration: none;
-  padding: 5px 10px;
+  padding: 10px 20px;
   border-radius: 5px;
   box-shadow: 2px 2px 2px grey;
   margin-top: auto;
@@ -515,6 +520,13 @@ Lyserød og brun kasse med priser*/
     justify-content: space-between;
     text-align: center;
   }
+  .col-order img {
+    max-width: 100%;
+    padding: 0;
+    margin-top: 20px;
+    margin-right: 10px;
+  }
+
   .cinsta {
     display: inline-block;
     background-color: #ecc2cc;
