@@ -1,10 +1,21 @@
+@font-face {
+  font-family: "Playfair";
+  src: url(fonte/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Lora";
+  src: url(fonte/Lora/Lora-VariableFont_wght.ttf);
+}
+
 h1 {
-  color: rgb(9, 9, 9);
+  color: rgb(249, 246, 246);
   text-align: center;
+  font-family: "Playfair";
 }
 h2 {
   color: white;
   text-align: center;
+  font-family: "Playfair";
 }
 
 h3 {
@@ -12,11 +23,21 @@ h3 {
   text-align: center;
   border-bottom: 1px solid white;
   font-size: x-large;
+  font-family: "Playfair";
+}
+h4 {
+  color: white;
+  font-family: "Playfair";
 }
 h6 {
   color: white;
   place-self: center;
   font-size: large;
+  font-family: "Playfair";
+}
+p {
+  color: white;
+  font-family: "Lora";
 }
 
 body {
@@ -34,6 +55,7 @@ ul {
   list-style-type: none;
   padding: 0;
   justify-content: space-around;
+  font-family: "Playfair";
 }
 
 nav a {
@@ -85,7 +107,9 @@ h2 {
 }
 
 /* FORSIDE side 1
- Lyserøde kasser - her har jeg fjeret dette så den passer til mobil og lægger sig ned og ikke er 1fr 1fr */
+ Lyserøde kasser - her har jeg fjeret dette så den passer til mobil og 
+ lægger sig ned og ikke er 1fr 1fr */
+
 /* .image-container {
   display: grid;
   grid-template-columns: 1fr 1fr
@@ -103,14 +127,14 @@ h2 {
   padding-left: 5px;
   border-radius: 20px;
   margin-top: 15em;
-  place-self: left;
   font-size: 2vw;
   position: absolute;
 }
 h5 {
   color: white;
   text-align: center;
-  font-size: xx-large;
+  font-size: x-large;
+  margin: 0;
 }
 /* lyserøde kasser */
 .image-box1 {
@@ -150,7 +174,7 @@ h5 {
 .footerbox {
   display: grid;
   grid-template-columns: 1fr;
-  background-color: pink;
+  background-color: #ac8969;
 }
 .følgos img {
   max-width: 50%;
@@ -197,7 +221,7 @@ Lyserød og brun kasse med priser*/
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
-  padding: 20 px;
+  padding: 20px;
 }
 
 .img2 {
@@ -224,7 +248,7 @@ Lyserød og brun kasse med priser*/
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 5px;
-  box-shadow: 2px 2px 2px grey;
+  box-shadow: 10px 10px 10px rgb(253, 251, 251);
   margin-top: auto;
 }
 .ninsta {
@@ -259,6 +283,7 @@ Lyserød og brun kasse med priser*/
   margin-top: auto;
   padding: 5px 10px;
   border-radius: 5px;
+  font-family: "Lora";
 }
 .btn2 {
   background-color: #f299b9;
@@ -268,6 +293,7 @@ Lyserød og brun kasse med priser*/
   border-radius: 5px;
   box-shadow: 2px 2px 2px grey;
   margin-bottom: 20px;
+  font-family: "Lora";
 }
 .btn3 {
   display: inline-block;
@@ -278,6 +304,7 @@ Lyserød og brun kasse med priser*/
   margin-top: auto;
   padding: 5px 10px;
   border-radius: 5px;
+  font-family: "Lora";
 }
 .følgos {
   display: flex;
@@ -285,9 +312,14 @@ Lyserød og brun kasse med priser*/
   justify-content: space-between;
   text-align: center;
   align-items: center;
+  font-family: "Lora";
 }
 .kontakt {
   text-align: center;
+}
+.kontakt img {
+  max-width: 30%;
+  padding-left: 120px;
 }
 
 /* Jeg skubber her min BOOK TID i bund  */
@@ -297,13 +329,36 @@ Lyserød og brun kasse med priser*/
   justify-content: space-between;
 }
 
+h2 {
+  text-align: center;
+  position: relative;
+  font-weight: bold;
+}
+h2::before,
+h2::after {
+  content: "";
+  position: absolute;
+  top: 60%;
+  width: 25%;
+  height: 1px;
+  background-color: white;
+}
+h2::before {
+  left: 0;
+}
+h2::after {
+  right: 0;
+}
+
 /* MIN COOOOOOOOOOOOOOO0000000000000000000000000OOMPUTER VERSION */
 
 @media (width > 600px) {
   body {
     padding-inline: 40px;
   }
-
+  .kontakt img {
+    max-width: 20%;
+  }
   /* navigationsmenu */
   ul {
     display: flex;
@@ -313,7 +368,7 @@ Lyserød og brun kasse med priser*/
   }
 
   nav a {
-    color: rgb(12, 11, 11);
+    color: rgb(252, 248, 248);
     text-decoration: none;
     font-size: large;
   }
@@ -408,7 +463,6 @@ Lyserød og brun kasse med priser*/
     padding-left: 5px;
     border-radius: 20px;
     margin-top: 15em;
-    place-self: left;
     font-size: 2vw;
     position: absolute;
   }
@@ -496,7 +550,7 @@ Lyserød og brun kasse med priser*/
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    padding: 20 px;
+    padding: 20px;
   }
   .text2 {
     display: grid;
